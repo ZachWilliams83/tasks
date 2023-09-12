@@ -38,7 +38,7 @@ export function shout(message: string): string {
  * mark. Do not use an `if` statement in solving this question.
  */
 export function isQuestion(message: string): boolean {
-    let var1 = message.endsWith("?");
+    const var1 = message.endsWith("?");
     return var1;
 }
 
@@ -50,7 +50,7 @@ export function isQuestion(message: string): boolean {
 export function convertYesNo(word: string): boolean | null {
     if (word == "yes" || word == "YES") {
         return true;
-    } else if (word == "no" ||  word == "NO") {
+    } else if (word == "no" || word == "NO") {
         return false;
     } else {
         return null;
