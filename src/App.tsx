@@ -6,7 +6,11 @@ function App(): JSX.Element {
         <div className="App">
             <header className="App-header">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Umaine COS420 with React Hooks and TypeScript
+=======
+                UM COS420 with React Hooks and TypeScript
+>>>>>>> d80d3ed2ebcd608ebeab251e3e2404b141f8e46b
 =======
                 UM COS420 with React Hooks and TypeScript
 >>>>>>> d80d3ed2ebcd608ebeab251e3e2404b141f8e46b
