@@ -6,12 +6,8 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-<<<<<<< HEAD
                 Umaine COS420 with React Hooks and TypeScript UM COS420 with
                 React Hooks and TypeScript
-=======
-                UM COS420 with React Hooks and TypeScript
->>>>>>> upstream/task-objects
             </header>
             <h2>This is a header!</h2>
             <img
