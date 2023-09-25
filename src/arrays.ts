@@ -119,7 +119,9 @@ export function injectPositive(values: number[]): number[] {
 
     const beforeNegative = values.slice(0, negativeIndex + 1);
     const afterNegative = values.slice(negativeIndex + 1);
-    const sumBefore = beforeNegative.reduce((acc, val) => acc + val, 0) - values[negativeIndex];
+    const sumBefore =
+        beforeNegative.reduce((acc, val) => acc + val, 0) -
+        values[negativeIndex];
 
     // Construct the new array
     return beforeNegative.concat(sumBefore, afterNegative);
