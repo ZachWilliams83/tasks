@@ -6,7 +6,11 @@ import { Question, QuestionType } from "./interfaces/question";
  * that are `published`.
  */
 export function getPublishedQuestions(questions: Question[]): Question[] {
-    return [];
+    const questionsCopy = [...questions];
+    const published_questions = questionsCopy.filter(
+        (question: Question): boolean => question.published
+    );
+    return published_questions;
 }
 
 /**
@@ -15,7 +19,15 @@ export function getPublishedQuestions(questions: Question[]): Question[] {
  * `expected`, and an empty array for its `options`.
  */
 export function getNonEmptyQuestions(questions: Question[]): Question[] {
-    return [];
+    const questionsCopy = [...questions];
+    const full_questions = questionsCopy.filter(
+        (question: Question): boolean =>
+            question.body !== "" &&
+            question.expected !== "" &&
+            question.options &&
+            question.options.length > 0
+    );
+    return full_questions;
 }
 
 /***
