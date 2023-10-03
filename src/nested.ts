@@ -173,7 +173,12 @@ export function renameQuestionById(
     targetId: number,
     newName: string
 ): Question[] {
-    return [];
+    return questions.map((q) => {
+        if (q.id === targetId) {
+            return { ...q, name: newName };
+        }
+        return q;
+    });
 }
 
 /***
@@ -188,7 +193,19 @@ export function changeQuestionTypeById(
     targetId: number,
     newQuestionType: QuestionType
 ): Question[] {
-    return [];
+    return questions.map((q) => {
+        if (q.id === targetId) {
+            return {
+                ...q,
+                type: newQuestionType,
+                options:
+                    newQuestionType !== "multiple_choice_question"
+                        ? []
+                        : q.options
+            };
+        }
+        return q;
+    });
 }
 
 /**
