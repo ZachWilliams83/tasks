@@ -8,6 +8,7 @@ function App(): JSX.Element {
             <header className="App-header">
                 Umaine COS420 with React Hooks and TypeScript UM COS420 with
                 React Hooks and TypeScript
+                UM COS420 with React Hooks and TypeScript
             </header>
             <h2>This is a header!</h2>
             <img
